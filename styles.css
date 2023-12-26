@@ -12,9 +12,7 @@ p { font-size: 18px; }
   border-radius: 30px;
   box-shadow: 0 12px 50px hsl(241, 100%, 89%);
   width: 54%;
-  margin: auto;
-  margin-top: 10vh;
-  margin-bottom: 30px;
+  margin: 13vh auto 30px;
 }
 
 /* RESULTS STYLING */
