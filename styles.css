@@ -1,0 +1,188 @@
+/* FONTS */
+@font-face { font-family: 'HankenGrotesk'; src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf); }
+@font-face { font-family: 'HankenGrotesk-Medium'; src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf); }
+@font-face { font-family: 'HankenGrotesk-Bold'; src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf); }
+@font-face { font-family: 'HankenGrotesk-ExtraBold'; src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf); }
+
+p { font-size: 18px; }
+
+.results-summary {
+  background: #fff;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0 12px 50px hsl(241, 100%, 89%);
+  width: 54%;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 30px;
+}
+
+/* RESULTS STYLING */
+.results-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+}
+
+#yourResult {
+  font-family: 'HankenGrotesk-Bold';
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.results-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.circle-content {
+  text-align: center;
+  color: #fff;
+}
+
+.circle-content h1 {
+  font-family: 'HankenGrotesk-Medium';
+  font-size: 5em;
+  margin: 0;
+}
+
+.circle-content p {
+  font-family: 'HankenGrotesk-Bold';
+  font-size: 16px;
+  opacity: 0.5;
+  margin: 0; }
+
+.results-desc { padding: 0 30px; }
+
+.results-desc h2 {
+  font-family: 'HankenGrotesk-Medium';
+  margin: 14px;
+}
+
+.results-desc p {
+  font-family: 'HankenGrotesk';
+  opacity: 0.75;
+}
+
+/* SUMMARY STYLING */
+.summary-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+#summary {
+  font-family: 'HankenGrotesk-Bold';
+  font-size: 24px;
+  color: hsl(224, 30%, 27%);
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background: #ddd;
+  border-radius: 8px;
+  padding: 0 17px;
+}
+
+.category-label {
+  display: flex;
+}
+
+.category-label p {
+  font-family: 'HankenGrotesk-Medium';
+  margin-left: 10px;
+}
+
+.score {
+  font-family: 'HankenGrotesk-Medium';
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.score span {
+  font-family: 'HankenGrotesk-Bold';
+  color: hsla(224, 30%, 27%, 1);
+}
+
+.react { background: hsla(0, 100%, 67%, 0.1); color: hsl(0, 100%, 67%); }
+.mem { background: hsla(39, 100%, 56%, 0.1); color: hsl(39, 100%, 56%); }
+.verb { background: hsla(166, 100%, 37%, 0.1); color: hsl(166, 100%, 37%); }
+.vis { background: hsla(234, 85%, 45%, 0.1); color: hsl(234, 85%, 45%); }
+
+/* CONTINUE BUTTON STYLING */
+button {
+  display: block;
+  width: 100%;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  margin: 30px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'HankenGrotesk-Bold';
+  font-size: 18px;
+}
+
+button:hover { background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); }
+
+/* MEDIA QUERY FRO MOBILE SCREENS */
+@media (max-width: 375px) {
+  body { margin: -1px; }
+  
+  .results-summary {
+    flex-direction: column;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* results styling */
+  .results-container {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 24px;
+  }
+  
+  #yourResult { font-size: 18px; }
+
+  .results-circle { width: 150px; height: 150px; margin: 10px auto; }
+  
+  .circle-content h1 { font-size: 60px; }
+  
+  /* summary styling */
+  .summary-container { padding: 10px 40px; }
+  
+  #summary { font-size: 20px; }
+
+  .category-list { text-align: center; }
+
+  .category { width: 95%; }
+
+  /* continue button styling */
+  button {
+    width: 105%;
+    text-align: center;
+  }
+}
